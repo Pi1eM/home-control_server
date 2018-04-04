@@ -1,0 +1,1 @@
+Target of this project was to write some kind of smart house system. It contains program called "server", which receives data from sensors and sends tasks to devices, and second one, called "control", which is GTK app for user (and admin) of this system. Project contains also simulation of sensors and devices.
