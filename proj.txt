@@ -1,0 +1,42 @@
+Piotr Kowalczyk, 291392
+Opis projektu
+
+System obsługi urządzeń domowych
+
+Celem projektu jest stworzenie systemu obsługi urządzeń domowych, składającego
+się z czujników, urządzeń, kontrolki dla użytkownika oraz serwera, który
+odbiera dane z czujników, przetwarza je i wysyła rozkazy do urządzeń.
+
+Moduły:
+ - serwer (w pliku serverus.py)
+ - kontroler (w pliku control.py)
+ - czujniki (przykładowa implementacja i użycie w pliku control.py)
+ - urządzenia (przykładowa implementacja i użycie w pliku device.py)
+ - dodatkowo:
+    - przykładowa inicjacja serwera (w pliku inits.py)
+    - 'wyjątki' (w pliku excep.py)
+    - kilka testów jednostkowych (w pliku tests.py)
+    - plik do distutils (setup.py)
+
+Komunikacja:
+ - z czujników do serwera socketami
+ - z serwera do urządzeń też socketami
+ - z kontrolera do serwera aplikacyjnie
+
+Serwer:
+ - aplikacyjny asynchroniczny serwer wielowątkowy
+
+Kontroler:
+ - interfejs Gtk
+
+Urządzenia:
+ - System ogrzewania/klimatyzacji
+ - oświetlenie
+ - zasilanie
+ - rolety/żaluzje
+
+Czujniki:
+ - czasomierz
+ - temperatury
+ - ruchu
+
